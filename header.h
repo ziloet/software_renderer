@@ -1,0 +1,7 @@
+#define ABS(Value)  (((Value) < 0) ? -(Value) : (Value))
+#define SIGN(Value) (((Value) < 0) ? -1 : ((Value) > 0) ? 1 : 0)
+#define MIN(A, B) ((A < B) ? (A) : (B))
+#define MAX(A, B) ((A > B) ? (A) : (B))
+#define CLAMP(Value, Min, Max) (((Value) > Max) ? (Max) : (Value < Min) ? (Min) : (Value))
+#define ARRAY_LENGRH(Array) (sizeof(Array) / sizeof(Array[0]))
+#define ASSERT(Expr) if(Expr); else DEBUG_BREAK()
